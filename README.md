@@ -1,11 +1,11 @@
-# &lt;gaia-loading&gt;
+# &lt;gaia-toast&gt;
 
 ## Installation
 
 ```bash
-$ bower install gaia-components/gaia-loading
+$ bower install gaia-components/gaia-toast
 ```
 
 ## Examples
 
-- [Example](http://gaia-components.github.io/gaia-loading/)
+- [Example](http://gaia-components.github.io/gaia-toast/)
