@@ -88,6 +88,7 @@ var template = `
   bottom: 0;
   width: 100%;
   font-style: italic;
+  z-index: 100;
 
   color:
     var(--highlight-color);
