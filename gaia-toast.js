@@ -33,7 +33,9 @@ proto.shadowStyleHack = function() {
 };
 
 proto.show = function() {
+  this.els.bread.removeEventListener('animationend', this.onAnimateOutEnd);
   clearTimeout(this.hideTimeout);
+
   this.els.inner.classList.add('visible');
   var reflow = this.els.inner.offsetTop;
   this.els.bread.classList.add('animate-in');
@@ -42,14 +44,22 @@ proto.show = function() {
 
 proto.hide = function() {
   var self = this;
+
   clearTimeout(this.hideTimeout);
   this.els.bread.classList.remove('animate-in');
   this.els.bread.classList.add('animate-out');
-  this.els.bread.addEventListener('animationend', function fn() {
-    self.els.bread.removeEventListener('animationend', fn);
+
+  this.onAnimateOutEnd = function() {
+    self.els.bread.removeEventListener('animationend', self.onAnimateOutEnd);
     self.els.bread.classList.remove('animate-out');
     self.els.inner.classList.remove('visible');
-  });
+  };
+
+  this.els.bread.addEventListener('animationend', this.onAnimateOutEnd);
+};
+
+proto.animateOut = function() {
+
 };
 
 proto.attrs = {
