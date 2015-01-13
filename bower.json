@@ -21,5 +21,8 @@
     "gaia-theme": "gaia-components/gaia-theme#~0.4.1",
     "gaia-fonts": "gaia-components/gaia-fonts#~0.2.1",
     "gaia-button": "gaia-components/gaia-button#master"
+  },
+  "dependencies": {
+    "gaia-component": "gaia-components/gaia-component#~0.2.0"
   }
 }
