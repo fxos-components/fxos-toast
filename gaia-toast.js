@@ -32,6 +32,7 @@ module.exports = component.register('gaia-toast', {
 
     this.els.inner.classList.add('visible');
     var reflow = this.els.inner.offsetTop;
+    this.els.bread.classList.remove('animate-out');
     this.els.bread.classList.add('animate-in');
     this.hideTimeout = setTimeout(this.hide.bind(this), this.timeout);
   },
