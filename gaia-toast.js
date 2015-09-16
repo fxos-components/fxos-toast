@@ -1,6 +1,5 @@
-;(function(define){define(function(require,exports,module){
-/*jshint esnext:true*/
-'use strict';
+/* globals define */
+;(function(define){'use strict';define(function(require,exports,module){
 
 /**
  * Dependencies
@@ -31,7 +30,7 @@ module.exports = component.register('gaia-toast', {
     clearTimeout(this.hideTimeout);
 
     this.els.inner.classList.add('visible');
-    var reflow = this.els.inner.offsetTop;
+    var reflow = this.els.inner.offsetTop; // jshint ignore: line
     this.els.bread.classList.remove('animate-out');
     this.els.bread.classList.add('animate-in');
     this.hideTimeout = setTimeout(this.hide.bind(this), this.timeout);
@@ -69,7 +68,7 @@ module.exports = component.register('gaia-toast', {
   },
 
   template: `
-    <div class="inner">
+    <div class="inner" role="alert">
       <div class="bread">
         <content></content>
       </div>
