@@ -1,3 +1,6 @@
 bower_components
 node_modules
 manifest.webapp
+marionette-mocha-gecko.log
+npm-debug.log
+gecko.log
