@@ -88,8 +88,8 @@ module.exports = component.register('gaia-toast', {
       text-align: center;
       z-index: 100;
 
-      color:
-        var(--highlight-color);
+      color: var(--text-color);
+      font-size: 17px;
     }
 
     /** Inner
