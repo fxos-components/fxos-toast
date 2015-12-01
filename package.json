@@ -36,5 +36,6 @@
   },
   "dependencies": {
     "gaia-component": "git://github.com/fxos-components/gaia-component.git"
-  }
+  },
+  "version": "0.1.0"
 }
