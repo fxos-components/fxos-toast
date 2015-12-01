@@ -1,6 +1,5 @@
 {
   "name": "gaia-toast",
-  "version": "0.0.0",
   "homepage": "https://github.com/fxos-components/gaia-toast",
   "license": "MIT",
   "main": "gaia-toast.js",
