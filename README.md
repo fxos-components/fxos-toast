@@ -1,14 +1,14 @@
-# &lt;gaia-toast&gt; [![](https://travis-ci.org/gaia-components/gaia-toast.svg)](https://travis-ci.org/gaia-components/gaia-toast) [![devDependency Status](https://david-dm.org/gaia-components/gaia-toast/dev-status.svg)](https://david-dm.org/gaia-components/gaia-toast#info=devDependencies)
+# &lt;gaia-toast&gt; [![](https://travis-ci.org/fxos-components/gaia-toast.svg)](https://travis-ci.org/fxos-components/gaia-toast)
 
 ## Installation
 
 ```bash
-$ bower install gaia-components/gaia-toast
+$ bower install fxos-components/gaia-toast
 ```
 
 ## Examples
 
-- [Example](http://gaia-components.github.io/gaia-toast/)
+- [Example](http://fxos-components.github.io/gaia-toast/)
 
 ## Tests
 

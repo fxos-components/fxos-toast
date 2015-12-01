@@ -1,7 +1,7 @@
 {
   "name": "gaia-toast",
   "version": "0.0.0",
-  "homepage": "https://github.com/gaia-components/gaia-toast",
+  "homepage": "https://github.com/fxos-components/gaia-toast",
   "license": "MIT",
   "main": "gaia-toast.js",
   "devDependencies": {
@@ -12,7 +12,7 @@
     "karma-mocha": "^0.2.0",
     "karma-sinon-chai": "^1.1.0",
     "mozilla-download": "^1.1.1",
-    "test-utils": "git://github.com/gaia-components/test-utils.git#v0.0.4",
+    "test-utils": "git://github.com/fxos-components/test-utils.git#v0.0.4",
     "chai": "3.0.0",
     "marionette-firefox-host": "1.0.4",
     "marionette-helper": "0.3.1",
@@ -27,15 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gaia-components/gaia-toast.git"
+    "url": "git://github.com/fxos-components/gaia-toast.git"
   },
   "bugs": {
-    "url": "https://github.com/gaia-components/gaia-toast/issues"
+    "url": "https://github.com/fxos-components/gaia-toast/issues"
   },
   "browser": {
     "gaia-component": "./bower_components/gaia-component/gaia-component.js"
   },
   "dependencies": {
-    "gaia-component": "git://github.com/gaia-components/gaia-component.git"
+    "gaia-component": "git://github.com/fxos-components/gaia-component.git"
   }
 }

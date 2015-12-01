@@ -1,7 +1,7 @@
 {
   "name": "gaia-toast",
   "version": "0.0.0",
-  "homepage": "https://github.com/gaia-components/gaia-toast",
+  "homepage": "https://github.com/fxos-components/gaia-toast",
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
@@ -18,12 +18,12 @@
     "README.md"
   ],
   "devDependencies": {
-    "base": "gaia-components/base",
-    "gaia-theme": "gaia-components/gaia-theme#~0.4.1",
-    "gaia-fonts": "gaia-components/gaia-fonts#~0.2.1",
-    "gaia-button": "gaia-components/gaia-button#master"
+    "base": "fxos-components/base",
+    "gaia-theme": "fxos-components/gaia-theme#~0.4.1",
+    "gaia-fonts": "fxos-components/gaia-fonts#~0.2.1",
+    "gaia-button": "fxos-components/gaia-button#master"
   },
   "dependencies": {
-    "gaia-component": "gaia-components/gaia-component#~0.3.9"
+    "gaia-component": "fxos-components/gaia-component#~0.3.9"
   }
 }
