@@ -11,8 +11,9 @@
     "karma-mocha": "^0.2.0",
     "karma-sinon-chai": "^1.1.0",
     "mozilla-download": "^1.1.1",
-    "test-utils": "git://github.com/fxos-components/test-utils.git#v0.0.4",
+    "test-utils": "fxos-components/test-utils",
     "chai": "3.4.1",
+    "marionette-client": "1.9.4",
     "marionette-firefox-host": "1.0.4",
     "marionette-helper": "0.3.2",
     "marionette-js-runner": "1.1.3"
