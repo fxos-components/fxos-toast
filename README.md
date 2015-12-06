@@ -3,14 +3,14 @@
 ## Installation
 
 ```bash
-$ bower install fxos-components/fxos-toast
+$ npm install fxos-toast
 ```
 
-## Platform Dependencies
+## Platform dependencies
 
+- CSS Custom Properties
 - Custom Elements
 - Shadow DOM
-- CSS Custom Properties
 
 ## Examples
 
