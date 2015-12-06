@@ -5,7 +5,7 @@
 var assert = require('chai').assert;
 marionette.plugin('helper', require('marionette-helper'));
 
-marionette('gaia-toast', function() {
+marionette('fxos-toast', function() {
   var client = marionette.client({
     profile: {
       prefs: {
@@ -56,7 +56,7 @@ marionette('gaia-toast', function() {
     toast.element = client.findElement(toast.selector);
   });
 
-  test('gaia-toast is present and visible to the assistive technology',
+  test('fxos-toast is present and visible to the assistive technology',
     function() {
       // Element was found
       assert.ok(toast.element, toast.selector);
@@ -64,18 +64,18 @@ marionette('gaia-toast', function() {
       assert.isTrue(toast.element.displayed());
     });
 
-  test('when hidden gaia-toast bread is hidden from the assistive technology',
+  test('when hidden fxos-toast bread is hidden from the assistive technology',
     function() {
       client.switchToShadowRoot(toast.element);
       var bread = client.findElement('.bread');
       failOnA11yError(function() {
         assert.isFalse(bread.displayed());
-      }, 'gaia-toast .bread element should be hidden both normally and from ' +
+      }, 'fxos-toast .bread element should be hidden both normally and from ' +
         'assistive technology by default.');
       client.switchToShadowRoot();
     });
 
-  test('when shown and then hidden, gaia-toast bread has correct visibility ' +
+  test('when shown and then hidden, fxos-toast bread has correct visibility ' +
     'state both normally and from the assistive technology standpoint',
     function() {
       toast.element.scriptWith(function(el) {
@@ -84,11 +84,11 @@ marionette('gaia-toast', function() {
       client.switchToShadowRoot(toast.element);
       failOnA11yError(function() {
         client.helper.waitForElement('.bread');
-      }, 'gaia-toast .bread element should be visible both normally and to ' +
+      }, 'fxos-toast .bread element should be visible both normally and to ' +
         'assistive technology.');
       failOnA11yError(function() {
         client.helper.waitForElementToDisappear('.bread');
-      }, 'gaia-toast .bread element should be hidden both normally and from ' +
+      }, 'fxos-toast .bread element should be hidden both normally and from ' +
         'assistive technology.');
       client.switchToShadowRoot();
     });

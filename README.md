@@ -1,14 +1,35 @@
-# &lt;gaia-toast&gt; [![](https://travis-ci.org/fxos-components/gaia-toast.svg)](https://travis-ci.org/fxos-components/gaia-toast)
+# &lt;fxos-toast&gt; [![](https://travis-ci.org/fxos-components/fxos-toast.svg)](https://travis-ci.org/fxos-components/fxos-toast)
 
 ## Installation
 
 ```bash
-$ bower install fxos-components/gaia-toast
+$ bower install fxos-components/fxos-toast
 ```
+
+## Platform Dependencies
+
+- Custom Elements
+- Shadow DOM
+- CSS Custom Properties
 
 ## Examples
 
-- [Example](http://fxos-components.github.io/gaia-toast/)
+- [Example](http://fxos-components.github.io/fxos-toast/)
+
+## Readiness
+
+- [ ] Accessibility
+- [ ] Test Coverage
+- [ ] Performance
+- [ ] Visual/UX
+- [ ] RTL
+
+## Developing locally
+
+1. `git clone https://github.com/fxos-components/fxos-checkbox.git`
+2. `cd fxos-checkbox`
+3. `npm install` (NPM3)
+4. `npm start`
 
 ## Tests
 
