@@ -1,6 +1,6 @@
 {
   "name": "fxos-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/fxos-components/fxos-toast",
   "license": "MIT",
   "main": "fxos-toast.js",
