@@ -1,6 +1,6 @@
 {
-  "name": "gaia-toast",
-  "homepage": "https://github.com/fxos-components/gaia-toast",
+  "name": "fxos-toast",
+  "homepage": "https://github.com/fxos-components/fxos-toast",
   "authors": [
     "Wilson Page <wilsonpage@me.com>"
   ],
@@ -14,18 +14,10 @@
     "test",
     "tests",
     "examples",
-    "README.md"
+    "README.md",
+    "webpack.config.js"
   ],
-  "devDependencies": {
-    "base": "fxos-components/base",
-    "gaia-theme": "fxos-components/gaia-theme",
-    "gaia-fonts": "fxos-components/gaia-fonts",
-    "gaia-button": "fxos-components/gaia-button"
-  },
   "dependencies": {
-    "gaia-component": "fxos-components/gaia-component#~0.6.0"
-  },
-  "resolutions": {
-    "gaia-component": "~0.6.0"
+    "fxos-component": "fxos-components/fxos-component#~1.0.0"
   }
 }

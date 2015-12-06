@@ -1,13 +1,17 @@
 'use strict';
 module.exports = function(config) {
   config.set({
-    frameworks: ['mocha', 'sinon-chai'],
+    basePath: '..',
     browsers: ['firefox_latest'],
     client: {
       captureConsole: true,
       mocha: {'ui': 'tdd'}
     },
-    basePath: '../',
+
+    frameworks: [
+      'mocha',
+      'sinon-chai'
+    ],
 
     customLaunchers: {
       firefox_latest: {
@@ -19,8 +23,8 @@ module.exports = function(config) {
     },
 
     files: [
-      'bower_components/gaia-component/gaia-component.js',
-      'gaia-toast.js',
+      'node_modules/fxos-component/fxos-component.js',
+      'fxos-toast.js',
       'node_modules/axe-core/axe.min.js',
       'node_modules/test-utils/src/utils.js',
       'node_modules/test-utils/src/accessibility.js',
@@ -28,7 +32,6 @@ module.exports = function(config) {
     ],
 
     proxies: {
-      '/bower_components/': 'http://localhost:9876/base/bower_components/',
       '/node_modules/': 'http://localhost:9876/base/node_modules/'
     }
   });

@@ -1,6 +1,6 @@
 /* jshint maxlen:120 */
 /* global sinon, suite, setup, teardown, test, toast, assert */
-suite('GaiaToast', function() {
+suite('fxos-toast', function() {
   'use strict';
 
   var accessibility = window['test-utils'].accessibility;
@@ -35,17 +35,17 @@ suite('GaiaToast', function() {
      * the component.
      */
 
-    test('Check that in its default state gaia-toast passes all ' +
+    test('Check that in its default state fxos-toast passes all ' +
       'accessibility checks mentioned above', function(done) {
-      this.dom.innerHTML = '<gaia-toast id="toast" timeout="2000">Like toast from a toaster</gaia-toast>';
+      this.dom.innerHTML = '<fxos-toast id="toast" timeout="2000">Like toast from a toaster</fxos-toast>';
       assert.equal(toast.els.inner.getAttribute('role'), 'alert');
       accessibility.check(this.dom).then(done, done);
     });
 
-    test('Check that when shown gaia-toast passes all accessibility checks ' +
+    test('Check that when shown fxos-toast passes all accessibility checks ' +
       'mentioned above', function(done) {
-      this.dom.innerHTML = '<gaia-toast id="toast" timeout="10000">Like toast from a toaster</gaia-toast>';
-      // Since hide timeout is set to 10s, gaia-toast should be visible for the
+      this.dom.innerHTML = '<fxos-toast id="toast" timeout="10000">Like toast from a toaster</fxos-toast>';
+      // Since hide timeout is set to 10s, fxos-toast should be visible for the
       // duration of the accessibility checks
       toast.show();
       setTimeout(() => {
@@ -56,10 +56,10 @@ suite('GaiaToast', function() {
       }, 400);
     });
 
-    test('Check that when hidden gaia-toast passes all accessibility checks ' +
+    test('Check that when hidden fxos-toast passes all accessibility checks ' +
       'mentioned above', function(done) {
-      this.dom.innerHTML = '<gaia-toast id="toast" timeout="1000ms">Like toast from a toaster</gaia-toast>';
-      // Since hide timeout is set to 1000ms, gaia-toast should be hidden by the
+      this.dom.innerHTML = '<fxos-toast id="toast" timeout="1000ms">Like toast from a toaster</fxos-toast>';
+      // Since hide timeout is set to 1000ms, fxos-toast should be hidden by the
       // time accessibility checks are performed
       toast.show();
       setTimeout(() => {

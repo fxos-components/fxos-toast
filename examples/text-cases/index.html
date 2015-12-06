@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>fxos-toast</title>
+  <meta name="description" content="fxos-toast example">
+  <link rel="stylesheet" type="text/css" href="node_modules/fxos-theme/fxos-theme.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/fxos-font/fxos-font.css">
+  <script src="node_modules/fxos-theme/lib/fxos-theme-selector.js"></script>
+  <script src="node_modules/fxos-component/fxos-component.js"></script>
+  <script src="node_modules/fxos-button/fxos-button.js"></script>
+  <script src="fxos-toast.js"></script>
+  <style>
+    html {
+      background: var(--fxos-background);
+      color: var(--fxos-color);
+      font-family: 'FiraSans';
+    }
+
+    body {
+      margin: 0;
+      padding: 42px 18px 0 18px;
+    }
+
+    body > h1 {
+      text-align: center;
+      font-weight: 300;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body role="application">
+  <fxos-theme-selector></fxos-theme-selector>
+  <h1>&lt;fxos-toast&gt;</h1>
+  <section class="l-align-center">
+    <fxos-button id="button">Let's toast</fxos-button>
+    <fxos-toast id="toast" timeout="2000">Like toast from a toaster</fxos-toast>
+  </section>
+
+  <script>
+    button.addEventListener('click', toast.show.bind(toast));
+  </script>
+</body>
+</html>
